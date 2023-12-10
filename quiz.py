@@ -1,3 +1,36 @@
+import random
+
+# Asks user specified number of random questions from the question set provided
+def quiz(questions, num_of_questions):
+  # Keep track of correct answers
+  correct = 0
+  print('--- Quiz time! ---\n')
+  # Loop num_of_q times
+  for i in range(num_of_questions):
+    # random question from questions
+    question = random.choice(questions)
+    # Print the question property of question object
+    print(question['question'])
+    # Print answer options from options property of question object
+    for answer_option in question['options']:
+      print(answer_option)
+    
+    # Use our user_choice function here too to get answer from user
+    answer = user_choice('Your answer (A,B,C or D): ', ['A', 'B', 'C', 'D'])
+
+    # If correct -> congratulate and correct++
+    if (answer == question['answer']):
+      correct += 1
+      print('Correct!')
+    # Else tell the correct answer
+    else:
+      print('Wrong. The correct answer was', question['answer'])
+
+  # Return num of correct answers
+  return correct
+
+
+
 # Load questions from easy/medium/hard/insane txt file
 # Split question, answer choices and correct answer into different properties inside questions list
 def load_questions(difficulty):
@@ -33,11 +66,22 @@ while True:
   print('1 - Take a Quiz')
   print('2 - Add a Question')
   print('3 - Exit')
+  # Choose from the above options
   option = user_choice('Choose an option(1, 2 or 3): ', ['1', '2', '3'])
 
   if (option == '1'):
+    # Choose difficulty
     difficulty = user_choice('Choose difficulty(easy, medium, hard or insane): ', ['easy', 'medium', 'hard', 'insane'])
-    load_questions(difficulty)
+    # Load chosen difficulty questions
+    questions = load_questions(difficulty)
+    # Choose num of questions, current possible answers 3,4,5,6,7,8,9,10
+    # Need to stringify numbers for user_choice function to work properly
+    num_of_questions = int(user_choice('How many questions do you want to answer(3-10)', [str(n) for n in range(3,11)]))
+    # Quiz loop, store correct answers.
+    correct_answers = quiz(questions, num_of_questions)
+    # Print how many user got correct out of X number of questions
+    print('--- Results ---')
+    print(f'You got {correct_answers} out of {num_of_questions}')
   elif (option == '2'):
     print('Add question loop here')
   elif (option == '3'):
