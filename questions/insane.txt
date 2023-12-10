@@ -16,3 +16,4 @@ What is the world's deepest trench?|A: Mariana Trench|B: Java Trench|C: Tonga Tr
 What year was the Magna Carta signed?|A: 1215|B: 1415|C: 1615|D: 1815|A
 Which chemical element was formerly known as brimstone?|A: Mercury|B: Sulfur|C: Bromine|D: Phosphorus|B
 In which century did the Black Death occur?|A: 14th Century|B: 15th Century|C: 16th Century|D: 17th Century|A
+How many universities there are in Finland?|A: 6|B: 8|C: 17|D: 14|D

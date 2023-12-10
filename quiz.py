@@ -21,13 +21,32 @@ def quiz(questions, num_of_questions):
     # If correct -> congratulate and correct++
     if (answer == question['answer']):
       correct += 1
-      print('Correct!')
+      print('\nCorrect!\n')
     # Else tell the correct answer
     else:
-      print('Wrong. The correct answer was', question['answer'])
+      print('\nWrong. The correct answer was', question['answer'], '\n')
 
   # Return num of correct answers
   return correct
+
+# Add a question to specified difficulty textfile
+def add_question(difficulty):
+  # Our question
+  question = input("Enter the question: ")
+  # Enter the choices one by one, use a cool list comprehension here and add the letter in front of each answer option
+  options = [option + ': ' + input(f'Enter answer option {option}: ') for option in ['A', 'B', 'C', 'D']]
+  # Give the correct answer
+  answer = input('Which one is the correct answer? (A,B,C or D): ')
+  # Make our new question object
+  new_question = {'question': question, 'options': options, 'answer': answer}
+
+  # Onto writing the question into the file, use 'a' parameter to append
+  # Questions are stored in format: Question|A: Mikki|B: Hiiri|C: Aku|D: Ankka|C
+  with open(f'./questions/{difficulty}.txt', 'a') as file:
+    # Looks confusing but the end result is basically: '|'.join(list)
+    # Our answer options are already a list, and we turn our question and answer also onto list, then add all together to form a whole list, which we then join with '|'.
+    file.write('\n' + '|'.join([new_question['question']] + new_question['options'] + [new_question['answer']]))
+  print('\nQuestion added successfully\n')
 
 
 
@@ -58,7 +77,7 @@ def user_choice(prompt, options):
       return user_input
     else:
       print('Your choice is not found in the available options, please try again')
-      
+
 # Print varying results based on the portion of correct answers
 def end_result(correct_answers, num_of_questions):
   print('\n--- Results ---\n')
@@ -92,13 +111,16 @@ while True:
     questions = load_questions(difficulty)
     # Choose num of questions, current possible answers 3,4,5,6,7,8,9,10
     # Need to stringify numbers for user_choice function to work properly
-    num_of_questions = int(user_choice('How many questions do you want to answer(3-10)', [str(n) for n in range(3,11)]))
+    num_of_questions = int(user_choice('How many questions do you want to answer(3-10): ', [str(n) for n in range(3,11)]))
     # Quiz loop, store correct answers.
     correct_answers = quiz(questions, num_of_questions)
     # Print how many user got correct out of X number of questions
     end_result(correct_answers, num_of_questions)
   elif (option == '2'):
-    print('Add question loop here')
+    # Choose difficulty
+    difficulty = user_choice('Choose difficulty for your question(easy, medium, hard or insane): ', ['easy', 'medium', 'hard', 'insane'])
+    # Question adding loop, add question to chosen difficulty .txt file
+    add_question(difficulty)
   elif (option == '3'):
     print('Exit successful')
     break

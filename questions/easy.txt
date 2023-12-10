@@ -19,3 +19,8 @@ What do bees produce?|A: Milk|B: Honey|C: Wax|D: Silk|B
 What is the main ingredient in bread?|A: Sugar|B: Flour|C: Eggs|D: Butter|B
 Which animal is known for its humps?|A: Camel|B: Elephant|C: Giraffe|D: Lion|A
 Who is pewdiepie?|A: Astronaut|B: Chef|C: Prime Minister|D: Youtuber|D
+What animal has a horn?|A: Fish|B: Unicorn|C: Dog|D: Turtle|B
+Which of the following is one of Santa's reindeer?|A: Dixon|B: Jason|C: Porridge|D: Carrot|A
+Which of the following is a phone manufacturer?|A: Samsung|B: Sanoma|C: Supercell|D: Solita|A
+Where is Wuhan located?|A: Japan|B: South-Korea|C: Russia|D: China|D
+Where is Reykjavik located?|A: Finland|B: Sweden|C: Iceland|D: Norway|C
