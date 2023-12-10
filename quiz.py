@@ -35,8 +35,8 @@ def add_question(difficulty):
   question = input("Enter the question: ")
   # Enter the choices one by one, use a cool list comprehension here and add the letter in front of each answer option
   options = [option + ': ' + input(f'Enter answer option {option}: ') for option in ['A', 'B', 'C', 'D']]
-  # Give the correct answer
-  answer = input('Which one is the correct answer? (A,B,C or D): ')
+  # Give the correct answer, prevent bad answers with user_choice function
+  answer = user_choice('Which one is the correct answer? (A,B,C or D): ', ['A', 'B', 'C', 'D'])
   # Make our new question object
   new_question = {'question': question, 'options': options, 'answer': answer}
 
