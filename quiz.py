@@ -32,7 +32,7 @@ def quiz(questions, num_of_questions):
 # Add a question to specified difficulty textfile
 def add_question(difficulty):
   # Our question
-  question = input("Enter the question: ")
+  question = input('Enter the question: ')
   # Enter the choices one by one, use a cool list comprehension here and add the letter in front of each answer option
   options = [option + ': ' + input(f'Enter answer option {option}: ') for option in ['A', 'B', 'C', 'D']]
   # Give the correct answer, prevent bad answers with user_choice function
@@ -59,7 +59,7 @@ def load_questions(difficulty):
     for line in file:
       # strip to get rid of linebreaks, split using | 
       parts = line.strip().split('|')
-      # Append to question as question, options, answer properties
+      # Append to question as an object with question, options, answer properties
       # First we have the question, then 4 options/answer choices, then the actual answer
       questions.append({
         'question': parts[0],

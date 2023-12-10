@@ -24,3 +24,4 @@ Which of the following is one of Santa's reindeer?|A: Dixon|B: Jason|C: Porridge
 Which of the following is a phone manufacturer?|A: Samsung|B: Sanoma|C: Supercell|D: Solita|A
 Where is Wuhan located?|A: Japan|B: South-Korea|C: Russia|D: China|D
 Where is Reykjavik located?|A: Finland|B: Sweden|C: Iceland|D: Norway|C
+Where is Donald Trump from?|A: Finland|B: Sweden|C: Canada|D: USA|D
