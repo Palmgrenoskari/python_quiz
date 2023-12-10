@@ -4,7 +4,7 @@ import random
 def quiz(questions, num_of_questions):
   # Keep track of correct answers
   correct = 0
-  print('--- Quiz time! ---\n')
+  print('\n--- Quiz time! ---\n')
   # Loop num_of_q times
   for i in range(num_of_questions):
     # random question from questions
@@ -48,7 +48,6 @@ def load_questions(difficulty):
         'answer': parts[5]
       })
   # Finally return the questions list
-  print(questions)
   return questions
 
 # Get user user choice and return it, make sure userchoice is in list of available options
@@ -59,10 +58,27 @@ def user_choice(prompt, options):
       return user_input
     else:
       print('Your choice is not found in the available options, please try again')
+      
+# Print varying results based on the portion of correct answers
+def end_result(correct_answers, num_of_questions):
+  print('\n--- Results ---\n')
+  # All correct
+  if (correct_answers == num_of_questions):
+    print(f'WHAT A GENIUS!\nYou got everything correct {correct_answers}/{num_of_questions}')
+  # None correct
+  elif (correct_answers == 0):
+    print(f'What happened? I can\'t believe it.\nYou got none of the answers correct {correct_answers}/{num_of_questions}')
+  # Else just print score
+  else:
+    print(f'Your score: {correct_answers}/{num_of_questions}')
+
+  # Another quiz?
+  print('\nAnother Quiz?')
+
 
 # Basic quiz loop
 while True:
-  print('--- Quiz App ---')
+  print('\n----- Quiz App -----\n')
   print('1 - Take a Quiz')
   print('2 - Add a Question')
   print('3 - Exit')
@@ -80,8 +96,7 @@ while True:
     # Quiz loop, store correct answers.
     correct_answers = quiz(questions, num_of_questions)
     # Print how many user got correct out of X number of questions
-    print('--- Results ---')
-    print(f'You got {correct_answers} out of {num_of_questions}')
+    end_result(correct_answers, num_of_questions)
   elif (option == '2'):
     print('Add question loop here')
   elif (option == '3'):
