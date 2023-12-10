@@ -1,0 +1,20 @@
+What is the chemical symbol for gold?|A: Au|B: Ag|C: Fe|D: Gd|A
+Who was the first person to step on the Moon?|A: Buzz Aldrin|B: Yuri Gagarin|C: Neil Armstrong|D: John Glenn|C
+Which country hosted the 2016 Summer Olympics?|A: China|B: Brazil|C: United Kingdom|D: Russia|B
+What is the largest planet in our solar system?|A: Earth|B: Mars|C: Jupiter|D: Saturn|C
+How many bones are in the human body?|A: 206|B: 210|C: 215|D: 220|A
+What is the capital of Japan?|A: Beijing|B: Seoul|C: Tokyo|D: Bangkok|C
+Who is the author of 'Pride and Prejudice'?|A: Jane Austen|B: Emily Brontë|C: Charles Dickens|D: George Eliot|A
+In which year did World War II end?|A: 1945|B: 1946|C: 1944|D: 1947|A
+What is the main language spoken in Brazil?|A: Spanish|B: English|C: Portuguese|D: French|C
+What is the pH of water?|A: 5|B: 6|C: 7|D: 8|C
+Which country is known as the Land of the Rising Sun?|A: China|B: South Korea|C: Japan|D: Thailand|C
+Who discovered penicillin?|A: Marie Curie|B: Alexander Fleming|C: Isaac Newton|D: Albert Einstein|B
+What is the longest river in the world?|A: Nile|B: Amazon|C: Yangtze|D: Mississippi|B
+What is the smallest planet in our solar system?|A: Mercury|B: Venus|C: Mars|D: Earth|A
+Who wrote '1984'?|A: Aldous Huxley|B: George Orwell|C: J.R.R. Tolkien|D: F. Scott Fitzgerald|B 
+Who painted 'The Starry Night'?|A: Claude Monet|B: Pablo Picasso|C: Vincent Van Gogh|D: Leonardo da Vinci|C
+What is the main component of the sun?|A: Oxygen|B: Nitrogen|C: Helium|D: Hydrogen|D
+Which element is represented by the letter 'O' in the periodic table?|A: Gold|B: Oxygen|C: Osmium|D: Olmium|B
+What is the largest ocean on Earth?|A: Atlantic|B: Indian|C: Pacific|D: Arctic|C
+What is the radius of earth?|A: 6371| B: 7634|C: 9521|D: 12742|A
