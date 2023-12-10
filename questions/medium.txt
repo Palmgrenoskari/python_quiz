@@ -17,4 +17,4 @@ Who painted 'The Starry Night'?|A: Claude Monet|B: Pablo Picasso|C: Vincent Van 
 What is the main component of the sun?|A: Oxygen|B: Nitrogen|C: Helium|D: Hydrogen|D
 Which element is represented by the letter 'O' in the periodic table?|A: Gold|B: Oxygen|C: Osmium|D: Olmium|B
 What is the largest ocean on Earth?|A: Atlantic|B: Indian|C: Pacific|D: Arctic|C
-What is the radius of earth?|A: 6371| B: 7634|C: 9521|D: 12742|A
+What is the radius of earth?|A: 6371|B: 7634|C: 9521|D: 12742|A
