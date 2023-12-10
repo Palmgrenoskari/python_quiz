@@ -6,18 +6,18 @@ Initial 20 questions for each category were generated using ChatGPT4: https://ch
 
 Removed the questions with mathematical notation to keep it simple
 
-### Instructions:
+## Instructions:
 
 1. Run quiz.py
 2. Follow instructions in console
 
-##### Take a Quiz
+### Take a Quiz
 
 1. Type in "1" and press enter
 
 ![image](https://github.com/Palmgrenoskari/python_quiz/assets/62388905/88a43758-cce6-4de3-a8dd-15fcb5d3f5ec)
 
-2. Type in "easy", "medium", "hard" or "insane"
+2. Type in "easy", "medium", "hard" or "insane" as difficulty
 
 ![image](https://github.com/Palmgrenoskari/python_quiz/assets/62388905/d8706aa2-49f2-47be-a11c-401e5f8a5704)
 
@@ -38,11 +38,31 @@ Currently there is no functionality that removes duplicates.
 
 ![image](https://github.com/Palmgrenoskari/python_quiz/assets/62388905/d3b20de7-3cb0-463e-95dc-f523457c9c90)
 
-##### Add a question
+### Add a question
 
-Implement this
+1. Type in "2" and press Enter to add a question
 
-##### Exit
+![image](https://github.com/Palmgrenoskari/python_quiz/assets/62388905/0238b547-5ab1-42d1-bea9-ff686f4e932b)
+
+2. Type in "easy", "medium", "hard" or "insane" as difficulty
+
+![image](https://github.com/Palmgrenoskari/python_quiz/assets/62388905/a37d358c-44dc-48ee-9814-ebc6bfb73c38)
+
+3. Enter the question and the 4 answer options one by one from A to D
+
+![image](https://github.com/Palmgrenoskari/python_quiz/assets/62388905/a356ae19-e643-4ca7-8087-eeac9faaacbd)
+
+4. Provide the correct answer: A,B,C or D
+
+![image](https://github.com/Palmgrenoskari/python_quiz/assets/62388905/ca667faa-c83e-4f22-b8cc-9dfccb165174)
+
+5. Question successfully added and we are back in the starting menu
+
+![image](https://github.com/Palmgrenoskari/python_quiz/assets/62388905/5c1cc28d-d63e-4f99-82c6-2a60bcc68e6a)
+
+
+
+### Exit
 
 1. Type in "3" and press enter to Exit
 
